@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -14,30 +14,30 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="homeWork2_1_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSg-D4-rHk">
-                                <rect key="frame" x="20" y="64" width="350" height="358"/>
-                                <color key="backgroundColor" red="0.4462050796" green="0.96411532160000002" blue="0.28998130560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgf-b6-zN3">
-                                <rect key="frame" x="20" y="432" width="350" height="358"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ibF-4C-HFX">
+                                <rect key="frame" x="20" y="64" width="388" height="808"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jSg-D4-rHk">
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="399"/>
+                                        <color key="backgroundColor" red="0.4462050796" green="0.96411532160000002" blue="0.28998130560000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgf-b6-zN3">
+                                        <rect key="frame" x="0.0" y="409" width="388" height="399"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="rgf-b6-zN3" firstAttribute="width" secondItem="jSg-D4-rHk" secondAttribute="width" id="5Lp-TO-iNt"/>
-                            <constraint firstItem="rgf-b6-zN3" firstAttribute="top" secondItem="jSg-D4-rHk" secondAttribute="bottom" constant="10" id="Kbp-kk-BwG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rgf-b6-zN3" secondAttribute="bottom" constant="20" id="MVU-YD-eUc"/>
-                            <constraint firstItem="jSg-D4-rHk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="U5S-m5-A01"/>
-                            <constraint firstItem="rgf-b6-zN3" firstAttribute="height" secondItem="jSg-D4-rHk" secondAttribute="height" id="YcV-cb-sOl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jSg-D4-rHk" secondAttribute="trailing" constant="20" id="fDH-sU-5hK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rgf-b6-zN3" secondAttribute="trailing" constant="20" id="qD0-xE-XOI"/>
-                            <constraint firstItem="jSg-D4-rHk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="qd2-Ia-QsZ"/>
-                            <constraint firstItem="rgf-b6-zN3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xxA-R6-9td"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ibF-4C-HFX" secondAttribute="bottom" constant="20" id="2rP-a9-UZb"/>
+                            <constraint firstItem="ibF-4C-HFX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="J81-wz-mZi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ibF-4C-HFX" secondAttribute="trailing" constant="20" id="jI8-HT-T69"/>
+                            <constraint firstItem="ibF-4C-HFX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="tgJ-Kn-XN9"/>
                         </constraints>
                     </view>
                 </viewController>
